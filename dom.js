@@ -12,7 +12,9 @@ window.$ = function(selectorOrNode){
         array.push(selectorOrNode)
     }else if(selectorOrNode instanceof Array){
         for(var i=0;i<selectorOrNode.length;i++){
-             // if(!(selectorOrNode[i] instanceof Element)){continue}         
+              if(!(selectorOrNode[i] instanceof Element)){
+                  continue
+              }         
             array.push(selectorOrNode[i])
         }
     }
